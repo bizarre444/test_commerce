@@ -11,6 +11,7 @@ exports.HomePage = class HomePage {
         this.confirmPassField = page.locator('[formcontrolname="confirmPass"]');
         this.signupBtn = page.locator('.signup-button .mat-progress-spinner-light div').locator('span', { hasText: "Sign up for free" });
         this.popup = page.locator('#cdk-overlay-2');
+        this.getStart = page.locator('.welcome-screen-content-button');
     }
 
     async open(path) {

@@ -11,8 +11,6 @@ exports.FashionPage = class FashionPage extends HomePage {
         this.beauty = page.locator('.autocomplete-option-item__label', { hasText: ' Beauty & Personal Care ' });
         this.number = page.locator('[formcontrolname="phoneNumber"]');
         this.startBtn = page.locator('.signup-button');
-        this.getStart = page.locator('.welcome-screen-content-button');
-        this.popup = page.locator('#cdk-overlay-2');
     }
 
     async businessInfo(name, number) {

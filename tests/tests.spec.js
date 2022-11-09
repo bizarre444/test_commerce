@@ -1,17 +1,18 @@
 const { test, expect } = require('@playwright/test');
 const { Dashboard } = require('../src/pages/Dashboard');
+const { FashionPage } = require('../src/pages/FashionPage');
 const { HomePage } = require('../src/pages/HomePage');
 const { SantanderPage } = require('../src/pages/SantanderPage');
 
 function getRandom() {
     return Math.floor(Math.random() * 1000)
 }
-let email = 'roast' + getRandom() + '@hotmail.com';
+let email = getRandom() + 'roast' + getRandom() + '@hotmail.com';
 
 test.describe('There is two cases with different paramethers', () => {
 
     test('For fashion value', async({ page }) => {
-        let fashionpage = new HomePage(page);
+        let fashionpage = new FashionPage(page);
 
         //1. Visit
         await fashionpage.open('fashion');
@@ -35,7 +36,7 @@ test.describe('There is two cases with different paramethers', () => {
 
     })
 
-    test.only('For santander value', async({ page }) => {
+    test('For santander value', async({ page }) => {
         let santanderpage = new SantanderPage(page);
 
         //1. Visit
@@ -45,7 +46,7 @@ test.describe('There is two cases with different paramethers', () => {
         //3. Click ‘next’
         await santanderpage.clickNext();
         //4. Fill out the business information
-        await santanderpage.businessInfo('AQA Test', '123456')
+        await santanderpage.businessInfo('AQA Test', '123456', '222')
             //5. Register the account
         await santanderpage.clickStart();
         //6. Click on get started
