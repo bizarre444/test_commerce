@@ -7,7 +7,7 @@ const config = {
     expect: {
         timeout: 15000
     },
-    fullyParallel: true,
+    fullyParallel: false,
     reporter: 'html',
 
     use: {
