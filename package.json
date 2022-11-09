@@ -1,0 +1,20 @@
+{
+  "name": "test_commerce",
+  "version": "1.0.0",
+  "description": "test automation framework",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bizarre444/test_commerce.git"
+  },
+  "author": "Olga Shchelkunova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bizarre444/test_commerce/issues"
+  },
+  "homepage": "https://github.com/bizarre444/test_commerce#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.27.1"
+  }
+}

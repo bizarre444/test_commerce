@@ -1,0 +1,1 @@
+export default DashboardFashion = ['Transactions', 'Checkout', 'Products', 'Connect', 'Shopn', 'Message', 'Settings']
